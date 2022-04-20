@@ -1,4 +1,4 @@
-const pe = document.getElementById('divCitation');
+let pe = document.getElementById('divCitation');
 
 async function textrandomcitation () {
     fetch("https://api.kanye.rest/")
@@ -6,7 +6,8 @@ async function textrandomcitation () {
     .then(response => response.json())
 
     .then((data) => {
-        pe.textContent = data.quote;
+        pe.textContent = data.content;
     });
 };
+
 textrandomcitation();
