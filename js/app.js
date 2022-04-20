@@ -8,7 +8,7 @@ async function textrandomcitation () {
     .then(response => response.json())
 
     .then((data) => {
-        pe.textContent = data.content;
+        pe.textContent = data.quote;
     });
 };
 

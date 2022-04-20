@@ -6,6 +6,12 @@ html {
     font-size: 62.5%;
 }
 
-h1, h2 {
+h1, h2, button {
     text-transform: uppercase;
+}
+
+#header {
+    text-align: center;
+    background-color: #B3D4FC;
+    margin-bottom: 5rem;
 }
