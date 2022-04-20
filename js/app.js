@@ -14,5 +14,6 @@ async function textrandomcitation () {
 
 
 btn.addEventListener('click', () => {
+    document.createElement('li');
     textrandomcitation();    
 });
