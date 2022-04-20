@@ -1,4 +1,6 @@
 let pe = document.getElementById('divCitation');
+const MoreQuote = document.getElementById('addQuote');
+
 
 async function textrandomcitation () {
     fetch("https://api.kanye.rest/")
