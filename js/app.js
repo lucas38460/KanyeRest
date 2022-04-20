@@ -1,6 +1,6 @@
 let pe = document.getElementById('divCitation');
 const MoreQuote = document.getElementById('addQuote');
-
+const btnAdd = document.getElementById('addQuote');
 
 async function textrandomcitation () {
     fetch("https://api.kanye.rest/")
@@ -12,4 +12,7 @@ async function textrandomcitation () {
     });
 };
 
-textrandomcitation();
+
+btn.addEventListener('click', () => {
+    textrandomcitation();    
+});
