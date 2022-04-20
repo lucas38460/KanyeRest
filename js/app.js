@@ -32,3 +32,5 @@ btnAdd.addEventListener('click', () => {
 // BtnDown.addEventListener('click', () => {
 
 // });
+
+//.includes for test if this are in double in array 
