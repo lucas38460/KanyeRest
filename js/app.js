@@ -1,13 +1,12 @@
 const pe = document.getElementById('divCitation');
 
-async function textrandom () {
+async function textrandomcitation () {
     fetch("https://api.kanye.rest/")
 
     .then(response => response.json())
 
     .then((data) => {
-        baveu.textContent = data.content;
+        pe.textContent = data.quote;
     });
 };
-
-textrandom();
+textrandomcitation();
