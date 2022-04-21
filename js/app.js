@@ -28,12 +28,14 @@ async function textrandomcitation() {
 
         // Btn Move Up
         BtnUp.addEventListener("click", (arg) => {
-            console.log("Move Up")
+            console.log("Move Up");
+            newDiv.insertElementAdjacentHTML(1 , 'beforebegin');
         });
 
         // Btn Move Down
         BtnDown.addEventListener("click", () => {
-            console.log("move Down")
+            console.log("move Down");
+            newDiv.insertElementAdjacentHTML(1 , 'afterend');
         });
       }
     });
