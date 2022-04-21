@@ -15,3 +15,7 @@ h1, h2, button {
     background-color: #B3D4FC;
     margin-bottom: 5rem;
 }
+
+main {
+    text-align: center;
+}

@@ -3,7 +3,7 @@ const MoreQuote = document.getElementById('addQuote');
 const btnAdd = document.getElementById('addQuote');
 const BtnUp = document.getElementById('up');
 const BtnDown = document.getElementById('down');
-
+let Double = [""];
 
 
 
@@ -15,15 +15,19 @@ async function textrandomcitation () {
     .then((data) => {
         pe.textContent = data.quote;
     });
+    // if (Double.includes(data.quote)) {
+    //     textrandomcitation();  
+    // } else {
+    //     let newDiv = document.createElement('div');
+    //     newDiv.className = "divNew";
+    // } 
 };
 
 
 
 
 btnAdd.addEventListener('click', () => {
-    let newDiv = document.createElement('div');
-    newDiv.className = "divNew";
-    textrandomcitation();    
+    textrandomcitation();  
 });
 
 
