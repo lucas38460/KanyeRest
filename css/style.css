@@ -19,3 +19,8 @@ h1, h2, button {
 main {
     text-align: center;
 }
+
+li {
+    list-style: none;
+    margin: 0;
+}
