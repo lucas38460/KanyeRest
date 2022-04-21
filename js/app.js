@@ -27,8 +27,14 @@ async function textrandomcitation() {
         Double.push(data.quote);
 
         // Btn Move Up
- BtnUp.addEventListener('click', (arg) => {console.log(arg.target)});
- console.log(arg.target);
+        BtnUp.addEventListener("click", (arg) => {
+            console.log("Move Up")
+        });
+
+        // Btn Move Down
+        BtnDown.addEventListener("click", () => {
+            console.log("move Down")
+        });
       }
     });
 }
@@ -36,9 +42,3 @@ async function textrandomcitation() {
 btnAdd.addEventListener("click", () => {
   textrandomcitation();
 });
-
-
-// // Btn Move Down
-// BtnDown.addEventListener('click', () => {
-
-// });
