@@ -1,4 +1,3 @@
-const MoreQuote = document.getElementById("addQuote");
 const btnAdd = document.getElementById("addQuote");
 let Double = [""];
 
@@ -26,6 +25,10 @@ async function textrandomcitation() {
         UlMain.appendChild(newDiv);
 
         Double.push(data.quote);
+
+        // // Btn Move Up
+ BtnUp.addEventListener('click', (arg) => {console.log(arg.target)});
+ console.log(arg.target);
       }
     });
 }
@@ -34,14 +37,8 @@ btnAdd.addEventListener("click", () => {
   textrandomcitation();
 });
 
-// // Btn Move Up
-// BtnUp.addEventListener('click', () => {
-
-// });
 
 // // Btn Move Down
 // BtnDown.addEventListener('click', () => {
 
 // });
-
-//.includes for test if this are in double in array
