@@ -26,7 +26,7 @@ async function textrandomcitation() {
 
         Double.push(data.quote);
 
-        // // Btn Move Up
+        // Btn Move Up
  BtnUp.addEventListener('click', (arg) => {console.log(arg.target)});
  console.log(arg.target);
       }
