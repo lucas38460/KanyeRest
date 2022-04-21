@@ -4,6 +4,9 @@ const btnAdd = document.getElementById('addQuote');
 const BtnUp = document.getElementById('up');
 const BtnDown = document.getElementById('down');
 
+
+
+
 async function textrandomcitation () {
     fetch("https://api.kanye.rest/")
 
@@ -13,6 +16,8 @@ async function textrandomcitation () {
         pe.textContent = data.quote;
     });
 };
+
+
 
 
 btnAdd.addEventListener('click', () => {
