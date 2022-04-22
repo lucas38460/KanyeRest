@@ -28,9 +28,9 @@ async function textrandomcitation() {
 
         // Btn Move Up
 
-        BtnUp.addEventListener("click", (arg) => {
+        BtnUp.addEventListener("click", () => {
             console.log("Move Up");
-            BtnUp.parentElement.previousElementSibling.insertElementAdjacentHTML('beforebegin', newDiv.parentElement);
+            BtnUp.parentElement.previousElementSibling.insertElementAdjacentHTML('beforebegin', BtnUp.parentElement);
         });
 
         // Btn Move Down
