@@ -30,13 +30,13 @@ async function textrandomcitation() {
 
         BtnUp.addEventListener("click", () => {
             console.log("Move Up");
-            BtnUp.parentElement.previousElementSibling.insertElementAdjacentHTML('beforebegin', BtnUp.parentElement);
+            (BtnUp.parentElement).previousElementSibling.insertAdjacentElement('beforebegin', BtnUp.parentElement);
         });
 
         // Btn Move Down
         BtnDown.addEventListener("click", () => {
             console.log("move Down");
-            newDiv.parentElement.previousElementSibling.insertElementAdjacentHTML('afterend', newDiv.parentElement);
+            (BtnDown.parentElement).nextElementSibling.insertAdjacentElement('afterend', BtnDown.parentElement);
             
         });
       }
